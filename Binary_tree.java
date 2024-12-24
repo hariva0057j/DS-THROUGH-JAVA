@@ -30,6 +30,7 @@ class BST{
 
     public static void display(Node root){
         if(root == null) return;
+        if(root.right == null || root.left == null) System.out.println();
         System.out.print(root.data+"->");
         if(root.left != null) {
         System.out.print(root.left.data+",");
