@@ -65,7 +65,7 @@ class SLL{
     }
     else{
       Node temp = headnode;
-      while(temp.next != null){
+      while(temp.next != null && temp.next.next != null){
         temp = temp.next;
       }
       temp.next = null;
